@@ -54,7 +54,7 @@ A modern, cross-platform desktop application to download YouTube videos and musi
    python gui.py
    ```
 
-### Option 1: Run from exe
+### Option 2: Run from exe
 Download exe and use!
 
 ## Usage
