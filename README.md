@@ -37,7 +37,7 @@ A modern, cross-platform desktop application to download YouTube videos and musi
 | [`PyAV`](https://github.com/PyAV-Org/PyAV) | Audio/video conversion and merging |
 | [`mutagen`](https://github.com/quodlibet/mutagen) | Metadata embedding (ID3, MP4) |
 | [`customtkinter`](https://github.com/TomSchimansky/CustomTkinter) | Modern GUI widgets |
-| [`Pillow`](https://python-pillow.org/) | Image processing (WebP → JPEG conversion) |
+| [`Pillow`](https://github.com/python-pillow/Pillow) | Image processing (WebP → JPEG conversion) |
 | [`requests`](https://docs.python-requests.org/) | Fetching thumbnails and lyrics |
 
 ## Installation
@@ -46,28 +46,13 @@ A modern, cross-platform desktop application to download YouTube videos and musi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/youtube-downloader.git
+   git clone https://github.com/Mr-Catcraft/youtube-downloader.git
    cd youtube-downloader
    ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the application:
+2. Run the application:
    ```bash
    python gui.py
    ```
-
-### Option 2: Standalone EXE (Windows)
-
-Pre‑built executables are available in the [Releases](https://github.com/yourusername/youtube-downloader/releases) section. Download the `.exe` file and run it – no Python installation required.
-
-To build your own EXE with PyInstaller:
-```bash
-pip install pyinstaller
-pyinstaller --onefile --windowed --add-data "path/to/yt-dlp;yt_dlp" gui.py
-```
-(Adjust paths according to your environment.)
 
 ## Usage
 
@@ -78,16 +63,6 @@ pyinstaller --onefile --windowed --add-data "path/to/yt-dlp;yt_dlp" gui.py
 5. Click **Download MP3** or **Download MP4**.
 6. Wait for the download to complete – a progress bar indicates activity.
 7. A message box will confirm success and show the saved file name.
-
-## Building the Executable
-
-To create a standalone executable for Windows, use PyInstaller:
-
-```bash
-pyinstaller --onefile --windowed --name "YouTubeDownloader" gui.py
-```
-
-Make sure all dependencies are installed. The `--windowed` flag prevents a console window from appearing. You may need to include additional hidden imports (e.g., `yt_dlp`, `av`, `mutagen`, `PIL`, `customtkinter`). A complete `.spec` file can be provided upon request.
 
 ## License
 
@@ -103,7 +78,3 @@ Contributions are welcome! Feel free to open issues or submit pull requests. Ple
 - [PyAV](https://github.com/PyAV-Org/PyAV) – seamless multimedia handling.
 - [mutagen](https://github.com/quodlibet/mutagen) – robust tagging library.
 - [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) – beautiful modern UI.
-
----
-
-**Enjoy downloading!** If you encounter any problems, please report them on the [issue tracker](https://github.com/yourusername/youtube-downloader/issues).
